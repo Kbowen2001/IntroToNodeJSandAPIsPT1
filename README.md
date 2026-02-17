@@ -8,8 +8,9 @@ npm start runs the "start" script (node index.js).
 
 
 code package.json - opens json file
- cd "c:\Users\kbowen44_s.tooeletec\Desktop\IntroToNodeJSandAPIsPT1"
-  npm start
+
+ cd "c:\Users\kbowen44_s.tooeletec\Desktop\filename"
+ > npm start >
   in browser type: http://localhost:3000
 
 
