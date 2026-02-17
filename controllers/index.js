@@ -6,4 +6,4 @@ const tooeleTechFunction = (req, res) => {
   res.send("Tooele Tech is Awesome");
 };
 
-module.exports = { awesomeFunction, tooeleTechFunction };
+module.exports = { awesomeFunction, tooeleTechFunction }; 
