@@ -1,1 +1,1 @@
-start: "nodemon index.js";
+//stuff
