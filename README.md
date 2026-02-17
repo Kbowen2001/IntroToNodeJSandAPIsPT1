@@ -38,9 +38,6 @@ if ($conn) { Stop-Process -Id $conn[0].OwningProcess -Force }
 3. Start server
 npm start
 
- Test routes
-http://localhost:3000/
-http://localhost:3000/ttech
 
 Common mistakes
 - Typo in route path: use /ttech 
