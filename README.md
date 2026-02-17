@@ -25,3 +25,24 @@ Keep terminal open while testing.
 Try http://127.0.0.1:3000.
 Check for errors in terminal.
 Ensure port matches (3000 in code and URL).
+
+Troubleshooting (PowerShell)
+
+1. Go to project folder
+Set-Location "C:\Users\kbowen44_s.tooeletec\Desktop\IntroToNodeJSandAPIsPT1"
+
+2. If port 3000 is busy, stop the process
+$conn = Get-NetTCPConnection -LocalPort 3000 -State Listen -ErrorAction SilentlyContinue
+if ($conn) { Stop-Process -Id $conn[0].OwningProcess -Force }
+
+3. Start server
+npm start
+
+ Test routes
+http://localhost:3000/
+http://localhost:3000/ttech
+
+Common mistakes
+- Typo in route path: use /ttech 
+- app.listen should only be in root index.js.
+- Routes should be defined in routes/index.js and call controller methods.
